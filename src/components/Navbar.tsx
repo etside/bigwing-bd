@@ -5,6 +5,7 @@ import logo from "@/assets/logo.png";
 const links = [
   { label: "About", href: "#about" },
   { label: "Products", href: "#products" },
+  { label: "Inquiry", href: "#inquiry" },
   { label: "Contact", href: "#contact" },
 ];
 
