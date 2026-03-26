@@ -1,5 +1,5 @@
 import heroImage from "@/assets/hero-construction.jpg";
-import { Phone } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -26,13 +26,16 @@ const HeroSection = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up [animation-delay:600ms] opacity-0">
           <a
-            href="#contact"
+            href="https://wa.me/8801873722228"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-heading text-lg tracking-wider px-8 py-4 rounded-sm hover:brightness-110 transition-all"
           >
-            GET A QUOTE
+            <MessageCircle className="w-5 h-5" />
+            WHATSAPP US
           </a>
           <a
-            href="tel:+8801936448555"
+            href="tel:+8801712397013"
             className="inline-flex items-center justify-center gap-2 border border-foreground/30 text-foreground font-heading text-lg tracking-wider px-8 py-4 rounded-sm hover:border-primary hover:text-primary transition-all"
           >
             <Phone className="w-5 h-5" />

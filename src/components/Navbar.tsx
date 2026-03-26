@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const links = [
   { label: "About", href: "#about" },
@@ -13,8 +14,11 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="font-heading text-xl font-bold text-foreground tracking-wider">
-          BIG<span className="text-primary">WING</span>
+        <a href="#" className="flex items-center gap-2">
+          <img src={logo} alt="Big Wing Bangladesh" className="h-10 w-auto" />
+          <span className="font-heading text-xl font-bold text-foreground tracking-wider">
+            BIG<span className="text-primary">WING</span>
+          </span>
         </a>
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
@@ -22,7 +26,7 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a href="tel:+8801936448555" className="bg-primary text-primary-foreground font-heading text-sm tracking-wider px-5 py-2 rounded-sm hover:brightness-110 transition-all">
+          <a href="tel:+8801712397013" className="bg-primary text-primary-foreground font-heading text-sm tracking-wider px-5 py-2 rounded-sm hover:brightness-110 transition-all">
             CALL NOW
           </a>
         </div>

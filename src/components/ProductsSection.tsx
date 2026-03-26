@@ -1,22 +1,34 @@
-import steelImg from "@/assets/steel-products.jpg";
-import scaffoldingImg from "@/assets/scaffolding.jpg";
-import materialsImg from "@/assets/construction-materials.jpg";
+import steelPipesImg from "@/assets/steel-pipes.jpg";
+import steelBeamsImg from "@/assets/steel-beams.jpg";
+import hBeamsImg from "@/assets/h-beams.jpg";
+import sheetPilesImg from "@/assets/sheet-piles.jpg";
+import squareTubesImg from "@/assets/square-tubes.png";
 
 const products = [
   {
-    title: "Steel Products",
-    desc: "Premium quality steel rods, pipes, angles, and sheets — new and recycled options available.",
-    image: steelImg,
+    title: "Steel Pipes",
+    desc: "High-quality spiral and ERW steel pipes for construction and industrial use.",
+    image: steelPipesImg,
   },
   {
-    title: "Scaffolding",
-    desc: "Manufactured in-house scaffolding systems for safe and efficient construction work.",
-    image: scaffoldingImg,
+    title: "I-Beams & H-Beams",
+    desc: "Structural steel beams — new and recycled options for all project scales.",
+    image: steelBeamsImg,
   },
   {
-    title: "Construction Materials",
-    desc: "Complete range of building supplies including cement, aggregates, and hardware.",
-    image: materialsImg,
+    title: "H-Beams",
+    desc: "Premium H-beam sections for heavy structural applications and frameworks.",
+    image: hBeamsImg,
+  },
+  {
+    title: "Sheet Piles",
+    desc: "Steel sheet piles for retaining walls, cofferdams, and waterfront structures.",
+    image: sheetPilesImg,
+  },
+  {
+    title: "SS Square Tubes",
+    desc: "Stainless steel square tubes and profiles for architectural and structural work.",
+    image: squareTubesImg,
   },
 ];
 
@@ -30,7 +42,7 @@ const ProductsSection = () => {
             Our Products
           </h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <div
               key={product.title}
