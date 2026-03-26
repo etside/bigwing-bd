@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock } from "lucide-react";
+import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -10,7 +10,7 @@ const ContactSection = () => {
             Contact Us
           </h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
           <div className="bg-gradient-card border border-border rounded-sm p-8 text-center">
             <MapPin className="w-8 h-8 text-primary mx-auto mb-4" />
             <h3 className="font-heading text-xl text-foreground mb-2">ADDRESS</h3>
@@ -23,8 +23,15 @@ const ContactSection = () => {
           <div className="bg-gradient-card border border-border rounded-sm p-8 text-center">
             <Phone className="w-8 h-8 text-primary mx-auto mb-4" />
             <h3 className="font-heading text-xl text-foreground mb-2">PHONE</h3>
-            <a href="tel:+8801936448555" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-              +880 1936-448555
+            <a href="tel:+8801712397013" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              +880-1712397013
+            </a>
+          </div>
+          <div className="bg-gradient-card border border-border rounded-sm p-8 text-center">
+            <MessageCircle className="w-8 h-8 text-primary mx-auto mb-4" />
+            <h3 className="font-heading text-xl text-foreground mb-2">WHATSAPP</h3>
+            <a href="https://wa.me/8801873722228" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+              +880 1873-722228
             </a>
           </div>
           <div className="bg-gradient-card border border-border rounded-sm p-8 text-center">
